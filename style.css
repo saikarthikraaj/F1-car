@@ -1,0 +1,121 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav-logo span {
+    color: #e10600;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-menu .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #000;
+    color: #fff;
+}
+.hero-content h1 {
+    font-size: 36px;
+}
+.hero-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn.primary { background: #e10600; color: #fff; }
+.btn.secondary { background: #fff; color: #000; }
+.f1-car-silhouette {
+    width: 300px;
+}
+.car{
+    width: 50%;
+    border-radius: 50px;
+}
+/* Teams Section */
+.teams-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.teams-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.team-card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+.team-logo {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Tech Section */
+.tech-section { padding: 50px 20px; background: #f9f9f9; }
+.tech-content { display: flex; flex-wrap: wrap; gap: 20px; }
+.tech-image, .tech-info { flex: 1; }
+.car-diagram { display: flex; flex-direction: column; gap: 10px; }
+.car-part { padding: 5px 10px; background: #e10600; color: #fff; border-radius: 5px; width: fit-content; }
+
+/* History Section */
+.history-section { padding: 50px 20px; }
+.timeline { display: flex; flex-direction: column; gap: 20px; }
+.timeline-item { display: flex; gap: 20px; }
+.timeline-year { font-weight: bold; color: #e10600; width: 80px; }
+
+/* Contact Section */
+.contact-section { padding: 50px 20px; background: #f9f9f9; }
+.social-links a { margin-right: 10px; color: #111; font-size: 20px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu { display: none; flex-direction: column; gap: 10px; background: #111; position: absolute; top: 60px; width: 100%; left: 0; }
+    .nav-menu.active { display: flex; }
+    .hamburger { display: flex; }
+    .hero { flex-direction: column; text-align: center; }
+}
