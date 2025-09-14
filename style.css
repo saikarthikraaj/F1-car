@@ -73,7 +73,7 @@ body, html {
     width: 50%;
     border-radius: 50px;
 }
-/* Teams Section */
+
 .teams-section {
     padding: 50px 20px;
     text-align: center;
@@ -94,25 +94,20 @@ body, html {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-/* Tech Section */
 .tech-section { padding: 50px 20px; background: #f9f9f9; }
 .tech-content { display: flex; flex-wrap: wrap; gap: 20px; }
 .tech-image, .tech-info { flex: 1; }
 .car-diagram { display: flex; flex-direction: column; gap: 10px; }
 .car-part { padding: 5px 10px; background: #e10600; color: #fff; border-radius: 5px; width: fit-content; }
 
-/* History Section */
 .history-section { padding: 50px 20px; }
 .timeline { display: flex; flex-direction: column; gap: 20px; }
 .timeline-item { display: flex; gap: 20px; }
 .timeline-year { font-weight: bold; color: #e10600; width: 80px; }
 
-/* Contact Section */
 .contact-section { padding: 50px 20px; background: #f9f9f9; }
 .social-links a { margin-right: 10px; color: #111; font-size: 20px; }
 
-/* Responsive */
 @media (max-width: 768px) {
     .nav-menu { display: none; flex-direction: column; gap: 10px; background: #111; position: absolute; top: 60px; width: 100%; left: 0; }
     .nav-menu.active { display: flex; }
