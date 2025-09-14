@@ -6,20 +6,20 @@ body, html {
 }
 
 .navbar {
-    background: #111;
-    color: #fff;
+    background: black;
+    color: white;
     padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 .nav-logo a {
-    color: #fff;
+    color: grey;
     text-decoration: none;
     font-size: 24px;
 }
 .nav-logo span {
-    color: #e10600;
+    color: red;
 }
 .nav-menu {
     list-style: none;
@@ -27,7 +27,7 @@ body, html {
     gap: 20px;
 }
 .nav-menu .nav-link {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 .hamburger {
@@ -38,7 +38,7 @@ body, html {
 .hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: white;
     margin: 4px 0;
 }
 
@@ -48,8 +48,8 @@ body, html {
     align-items: center;
     justify-content: space-around;
     padding: 50px 20px;
-    background: #000;
-    color: #fff;
+    background: black;
+    color: white;
 }
 .hero-content h1 {
     font-size: 36px;
@@ -61,14 +61,10 @@ body, html {
     border-radius: 5px;
     display: inline-block;
 }
-.btn.primary { background: #e10600; color: #fff; }
-.btn.secondary { background: #fff; color: #000; }
+.btn.primary { background: red; color: white; }
+.btn.secondary { background: white; color: black; }
 .f1-car-silhouette {
     width: 300px;
-}
-.car{
-    width: 50%;
-    border-radius: 50px;
 }
 
 .teams-section {
@@ -82,28 +78,40 @@ body, html {
     flex-wrap: wrap;
 }
 .team-card {
-    background: #f0f0f0;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
 }
 .team-logo {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.tech-section { padding: 50px 20px; background: #f9f9f9; }
+.car{
+    width: 50%;
+    border-radius: 50px;
+}
+
+.f1car{
+    width: 20%;
+    border-radius: 20px;
+    
+}
+
+.tech-section { padding: 50px 20px; background: white; }
 .tech-content { display: flex; flex-wrap: wrap; gap: 20px; }
 .tech-image, .tech-info { flex: 1; }
 .car-diagram { display: flex; flex-direction: column; gap: 10px; }
-.car-part { padding: 5px 10px; background: #e10600; color: #fff; border-radius: 5px; width: fit-content; }
+.car-part { padding: 5px 10px; background: skyblue; color: white; border-radius: 5px; width: fit-content; }
 
 .history-section { padding: 50px 20px; }
 .timeline { display: flex; flex-direction: column; gap: 20px; }
 .timeline-item { display: flex; gap: 20px; }
-.timeline-year { font-weight: bold; color: #e10600; width: 80px; }
+.timeline-year { font-weight: bold; color: red; width: 80px; }
 
-.contact-section { padding: 50px 20px; background: #f9f9f9; }
-.social-links a { margin-right: 10px; color: #111; font-size: 20px; }
+.contact-section { padding: 50px 20px; background: white; }
+.social-links a { margin-right: 10px; color: black; font-size: 20px; }
+
 
 @media (max-width: 768px) {
     .nav-menu { display: none; flex-direction: column; gap: 10px; background: #111; position: absolute; top: 60px; width: 100%; left: 0; }
